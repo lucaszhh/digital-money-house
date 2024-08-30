@@ -44,6 +44,16 @@ export const TransferencesProvider: React.FC<TransferencesProviderProps> = ({ ch
       id: 0,
       origin: "",
       type: ""
+    },
+    {
+      account_id: 0,
+      amount: 0,
+      dated: "",
+      description: "",
+      destination: "",
+      id: 0,
+      origin: "",
+      type: ""
     }]);
 
   const [isLoadingTransferences, setIsLoadingTransferences] = useState(true);

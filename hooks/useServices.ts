@@ -6,7 +6,23 @@ type Props = {
 
 }
 export const useServices = ({ search }: Props) => {
-  const [services, setServices] = useState<IService[]>([]);
+  const [services, setServices] = useState<IService[]>([
+    {
+      id: 5,
+      name: "Youtube",
+      date: "string"
+    },
+    {
+      id: 6,
+      name: "Netflix",
+      date: "string"
+    },
+    {
+      id: 7,
+      name: "Spotify",
+      date: "string"
+    }
+  ]);
   useEffect(() => {
     const token = localStorage.getItem("token");
     const configService = {
@@ -20,7 +36,7 @@ export const useServices = ({ search }: Props) => {
     axios
       .request(configService)
       .then((response) => {
-        console.log("en el servicio: "+search);
+        console.log("en el servicio: " + search);
         setServices(response.data);
       })
       .catch((error) => {

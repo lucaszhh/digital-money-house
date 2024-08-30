@@ -41,50 +41,7 @@ const CreditCard = ({ listar }: PropsCard) => {
   };
 
   const onSubmit = async () => {
-    if (state.cvc === "" || state.name === "" || state.number === "") {
-      setError("Por favor, complete todos los campos");
-    } else {
-      const token = localStorage.getItem("token");
-      const account_id = localStorage.getItem("accountId");
-      const numberWithoutSpaces = number.replace(/\s/g, "");
-      const convertedNumber = parseInt(numberWithoutSpaces);
-      console.log(convertedNumber);
-      const infoData = {
-        cod: parseInt(cvc),
-        expiration_date: expiry,
-        first_last_name: name,
-        number_id: convertedNumber,
-      };
-      try {
-        const config = {
-          method: "post",
-          url: `https://digitalmoney.ctd.academy/api/accounts/${account_id}/cards`,
-          headers: {
-            Authorization: token,
-            "Content-Type": "application/json",
-          },
-          data: infoData,
-        };
-        axios
-          .request(config)
-          .then((response) => {
-            setSuccess(true);
-            if (listar) {
-              router.push("/listar-tarjetas");
-            } else {
-              router.push("/cargar-dinero/cargar-dinero-tarjeta");
-            }
-            return response;
-          })
-          .catch(function (error) {
-            setSuccess(false);
-            const errorMessage = catchError(error);
-            setError(errorMessage);
-          });
-      } catch (error) {
-        console.error(error);
-      }
-    }
+    alert("Esta función no esta habilitada");
   };
 
   return (

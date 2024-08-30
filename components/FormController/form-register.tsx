@@ -47,7 +47,6 @@ const FormRegister = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      await sendConfirmationEmail(data);
       router.push("/");
     } catch (error) {
       console.error(error);

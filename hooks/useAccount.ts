@@ -4,9 +4,9 @@ import { IAccount } from "../types";
 
 const useAccount = () => {
   const [userAccount, setUserAccount] = useState<IAccount>({
-    alias: "",
-    available_amount: "",
-    cvu: "",
+    alias: "DIGITAL.MONEY.HOUSE",
+    available_amount: "10000",
+    cvu: "845664865644654",
     id: 0,
     user_id: 0
   });

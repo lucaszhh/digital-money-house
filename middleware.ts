@@ -16,9 +16,9 @@ export default function middleware(req: NextRequest) {
     url.includes("listar-tarjetas") ||
     url.includes("ingresar-numero-cuenta")
   ) {
-    if (!token) {
-      return NextResponse.redirect(`${process.env.URL_PAGE}iniciar-sesion/paso-1`);
-    }
+    /*     if (!token) {
+          return NextResponse.redirect(`${process.env.URL_PAGE}iniciar-sesion/paso-1`);
+        } */
   }
 
   if (url2 === `${process.env.URL_PAGE}`) {

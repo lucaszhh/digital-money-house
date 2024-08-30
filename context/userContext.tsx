@@ -33,12 +33,12 @@ interface UserProviderProps {
 
 export const UserProviderNew: React.FC<UserProviderProps> = ({ children }) => {
   const [userInfo, setUserInfo] = useState<UserInfo>({
-    firstname: "",
-    lastname: "",
-    phone: "",
-    dni: 0,
-    email: "",
-    password: "",
+    firstname: "Lucas",
+    lastname: "Zarandon",
+    phone: "2613828489",
+    dni: 42510225,
+    email: "lucaszarandon24@gmail.com",
+    password: "prueba123",
   });
 
   const [isLoading, setIsLoading] = useState(true);

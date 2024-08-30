@@ -30,10 +30,10 @@ interface AccountProviderProps {
 
 export const AccountProviderNew: React.FC<AccountProviderProps> = ({ children }) => {
   const [accountInfo, setAccountInfo] = useState<AccountInfo>({
-    alias: "",
-    available_amount: "",
-    cvu: "",
-    user_id: 0
+    alias: "PERRO.CASA.DIGITAL",
+    available_amount: "10000",
+    cvu: "84518645655555112",
+    user_id: 2
   });
 
   const [isLoading, setIsLoading] = useState(true);

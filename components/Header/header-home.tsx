@@ -194,14 +194,9 @@ const HeaderHome = (props: any) => {
                 </Typography>
               </>
               : <>
-                <Link href="/iniciar-sesion/paso-1">
+                <Link href="/inicio">
                   <Button variant="primary" size="small">
                     Ingresar
-                  </Button>
-                </Link>
-                <Link href="/registro">
-                  <Button variant="primary" color="secondary" size="small">
-                    Crear Cuenta
                   </Button>
                 </Link>
               </>}

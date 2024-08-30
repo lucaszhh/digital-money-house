@@ -14,11 +14,11 @@ const Transference = () => {
   const { id } = router.query;
   const [transference, setTransference] = useState<ITransference>();
 
-  useEffect(() => {
+/*   useEffect(() => {
     if (!localStorage.getItem("token")) {
       router.push("/");
     }
-  }, []);
+  }, []); */
 
   useEffect(() => {
     const token = localStorage.getItem("token");

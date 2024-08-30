@@ -17,11 +17,11 @@ const addCard: NextPageWithLayout<PropsType> = () => {
   const { listar } = router.query;
   const esListar = listar === "true";
 
-  useEffect(() => {
+/*   useEffect(() => {
     if (!localStorage.getItem("token")) {
       router.push("/");
     }
-  }, []);
+  }, []); */
 
 
   return (

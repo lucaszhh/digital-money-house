@@ -9,20 +9,20 @@ type context = {
 }
 
 export const INITIAL_VALUE_ACCOUNT = {
-  alias: "",
-  available_amount: "",
-  cvu: "",
-  id: 0,
-  user_id: 0
+  alias: "PERRO.CASA.DIGITAL",
+  available_amount: "10000",
+  cvu: "84518645655555112",
+  user_id: 2,
+  id: 2
 };
 
 export const INITIAL_VALUE_USER = {
-  firstname: "",
-  lastname: "",
-  phone: "",
-  dni: 0,
-  email: "",
-  password: "",
+  firstname: "Lucas",
+  lastname: "Zarandon",
+  phone: "2613828489",
+  dni: 42510225,
+  email: "lucaszarandon24@gmail.com",
+  password: "prueba123",
 };
 
 export const UserContext = createContext<context>({

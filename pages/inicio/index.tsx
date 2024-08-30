@@ -12,11 +12,11 @@ const Inicio = () => {
 
   const router = useRouter();
 
-  useEffect(() => {
+/*   useEffect(() => {
     if (!localStorage.getItem("token")) {
       router.push("/");
     }
-  });
+  }); */
 
   return (
     <>
